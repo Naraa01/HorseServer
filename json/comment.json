@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "count": 2,
+  "data": [
+      {
+          "id": 2,
+          "userId": 1,
+          "horseId": 1,
+          "comment": "Saihan udamtai aduu bn",
+          "createdAt": "2021-11-19T05:03:26.000Z",
+          "updatedAt": "2021-11-19T05:03:26.000Z"
+      },
+      {
+          "id": 4,
+          "userId": 1,
+          "horseId": 1,
+          "comment": "Muugui shu",
+          "createdAt": "2021-11-19T05:03:46.000Z",
+          "updatedAt": "2021-11-19T05:03:46.000Z"
+      }
+  ]
+}

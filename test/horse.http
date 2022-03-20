@@ -1,0 +1,211 @@
+@url=http://localhost:5000
+
+# @name login
+POST {{url}}/userM/login
+Content-Type: application/json
+Accept: application/json
+
+{"name": "naraa", "password": "123456"}
+
+###
+@accessToken={{login.response.body.token}}
+
+
+### GET horse
+GET {{url}}/gender
+//ajillagaaatai
+Content-Type: application/json
+Accept: application/json
+accessToken: {{accessToken}}
+
+### GET horse gender id
+GET {{url}}/gender/622326eef252dca60a8e32a2/horses
+Content-Type: application/json
+Accept: application/json
+# accessToken: {{accessToken}}
+
+### horse create
+POST {{url}}/gender
+Content-Type: application/json
+Accept: application/json
+# accessToken: {{accessToken}}
+
+{
+  "name": "Гүү"
+}
+
+// ------- horses
+### GET horse
+GET {{url}}/horsesM
+//ajillagaaatai
+Content-Type: application/json
+Accept: application/json
+accessToken: {{accessToken}}
+
+
+// ------- horses pagination,, select, sort, page, limit etc
+### GET horses
+GET {{url}}/horsesM?userId=61a8eacf0168605e0a5c0354
+//ajillagaaatai
+Content-Type: application/json
+Accept: application/json
+accessToken: {{accessToken}}
+
+
+// ------- horses create
+//ajillahgu
+### horse create
+POST {{url}}/horsesM
+Content-Type: application/json
+Accept: application/json
+# accessToken: {{accessToken}}
+Authorization: {{accessToken}}
+
+{
+  "name": "Hul",
+  "father": "Hongor",
+  "mother": "Sharga",
+  "genderId": "6223275799d11bb53d70c326",
+  //"photo": "aaa.jpg",
+  "pedigree": "Suhbaatar",
+  "color": "hul",
+  "gender": "guu",
+  "sire": "Munkhtur",
+  "owner": "Munkhtur",
+  "country": "Darhan uul",
+  "info": "Turuu uzuur"
+}
+
+
+// ------- horse id
+### GET horse id
+GET {{url}}/horsesM/61af8744bd9782fa37321029
+Content-Type: application/json
+Accept: application/json
+accessToken: {{accessToken}}
+
+// ------- horses
+### GET horse
+GET {{url}}/horsesM
+//ajillagaaatai
+Content-Type: application/json
+Accept: application/json
+accessToken: {{accessToken}}
+
+### PUT horse 
+PUT {{url}}/horsesM/6222d377ca177ddba29424f7
+Content-Type: application/json
+Accept: application/json
+# accessToken: {{accessToken}}
+  
+{
+  //"name": "Hul",
+  "genderId": "622326faf252dca60a8e32a4",
+  //"father": "Hongor",
+  //"mother": "Sharga",
+  //"photo": "aaa.jpg",
+  //"pedigree": "Suhbaatar",
+  //"color": "hul",
+  //"gender": "azarga",
+  //"sire": "Munkhtur",
+  //"owner": "Munkhtur",
+  //"country": "Darhan uul",
+  "info": "Turuu uzuur"
+}
+
+### GET horse
+GET {{url}}/gender
+//ajillagaaatai
+Content-Type: application/json
+Accept: application/json
+accessToken: {{accessToken}}
+
+
+### DELETE horse
+DELETE {{url}}/horsesM/
+Content-Type: application/json
+Accept: application/json
+# accessToken: {{accessToken}}
+
+
+### GET users
+GET {{url}}/userM/usersss
+Content-Type: application/json
+Accept: application/json
+accessToken: {{accessToken}}
+
+
+### POST horse assign
+POST {{url}}/userM/register
+Content-Type: application/json
+Accept: application/json
+# accessToken: {{accessToken}}
+
+{
+  "name": "user1234",
+  "email": "user1234516@gmail.com",
+  "password": "123456"
+  //"role": "user"
+}
+
+
+### POST user login
+POST {{url}}/userM/login
+Content-Type: application/json
+Accept: application/json
+# accessToken: {{accessToken}}
+
+{
+  "name": "user",
+  "email": "user12345@gmail.com",
+  "password": "123456"
+}
+
+
+### POST horse entity details
+DELETE {{url}}/userM/
+Content-Type: application/json
+Accept: application/json
+# accessToken: {{accessToken}}
+
+
+//# GET entity detail list
+//GET {{url}}/api/horse/entitydetail/list
+//Content-Type: application/json
+//Accept: application/json
+# //accessToken: {{accessToken}}
+
+
+//# GET complain date te filter
+//GET {{url}}/api/horse/complain/list?type=хурд
+//Content-Type: application/json
+//Accept: application/json
+# //accessToken: {{accessToken}}
+
+
+//# horse state create
+//POST {{url}}/api/horse/state
+//Content-Type: application/json
+//Accept: application/json
+
+//{
+//    "code" : "0005",
+//    "name": "Шалгалт хаагдсан"
+//}
+
+
+//# horse state update
+//PUT {{url}}/api/state/8
+//Content-Type: application/json
+//Accept: application/json
+
+//{
+//    "code" : "0002",
+//    "name": "test"
+//}
+
+
+//# horse state delete
+//DELETE {{url}}/api/state/6
+//Content-Type: application/json
+//Accept: application/json

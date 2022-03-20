@@ -1,0 +1,54 @@
+{
+  "success": true,
+  "count": 4,
+  "data": [
+      {
+          "id": 1,
+          "lastname": "Erdene",
+          "firstname": "Erdenechuluun",
+          "title": "MUTMU",
+          "birth_country": "Hentii",
+          "horse": "Togoruu Galshar",
+          "other": "Sharga",
+          "pedigreeId": 1,
+          "createdAt": "2021-11-19T04:59:10.000Z",
+          "updatedAt": "2021-11-19T04:59:10.000Z"
+      },
+      {
+          "id": 2,
+          "lastname": "E",
+          "firstname": "Erdenechuluun",
+          "title": "MUTMU",
+          "birth_country": "Hentii",
+          "horse": "Togoruu Galshar",
+          "other": "Sharga",
+          "pedigreeId": 1,
+          "createdAt": "2021-11-19T04:59:15.000Z",
+          "updatedAt": "2021-11-19T04:59:15.000Z"
+      },
+      {
+          "id": 3,
+          "lastname": "B",
+          "firstname": "Baatar",
+          "title": "MUTMU",
+          "birth_country": "Hentii",
+          "horse": "Togoruu Galshar",
+          "other": "Sharga",
+          "pedigreeId": 2,
+          "createdAt": "2021-11-19T04:59:28.000Z",
+          "updatedAt": "2021-11-19T04:59:28.000Z"
+      },
+      {
+          "id": 4,
+          "lastname": "Bold",
+          "firstname": "Baatar",
+          "title": "MUTMU",
+          "birth_country": "Hentii",
+          "horse": "Togoruu Galshar",
+          "other": "Sharga",
+          "pedigreeId": 2,
+          "createdAt": "2021-11-19T04:59:35.000Z",
+          "updatedAt": "2021-11-19T04:59:35.000Z"
+      }
+  ]
+}
