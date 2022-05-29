@@ -3,8 +3,12 @@ const router = express.Router();
 const { protect } = require("../middleware/protect");
 const { getGenders, createGender } = require("../controller/gender");
 
-const { getCategoryHorses } = require("../controller/mon/horse");
+const {
+  getCategoryHorses,
+  getCategoryHorsesPublic,
+} = require("../controller/mon/horse");
 router.route("/:genderId/horses").get(getCategoryHorses);
+router.route("/:genderId/horses/public").get(getCategoryHorsesPublic);
 
 router
   .route("/")

@@ -32,12 +32,21 @@ const HorseSchema = new mongoose.Schema({
   father: {
     type: String,
   },
+
+  fatherId: {
+    type: mongoose.Schema.ObjectId,
+    ref: "Horse",
+  },
   mother: {
     type: String,
   },
+  motherId: {
+    type: mongoose.Schema.ObjectId,
+    ref: "Horse",
+  },
   photo: {
     type: String,
-    default: "no-photo.png",
+    default: "no-horse.png",
   },
   origin: {
     type: String,
@@ -64,6 +73,12 @@ const HorseSchema = new mongoose.Schema({
     type: String,
   },
   award: {
+    type: String,
+  },
+  status: {
+    type: String,
+  },
+  rating: {
     type: String,
   },
 });
